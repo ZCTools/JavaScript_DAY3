@@ -1,0 +1,22 @@
+<!-- XSS Koruması -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Savunması</title>
+</head>
+<body>
+    <h1>Yorum Ekle</h1>
+    <form id="commentForm">
+        <label for="comment">Yorumunuz:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <button type="submit">Gönder</button>
+    </form>
+
+    <h2>Yorumlar</h2>
+    <ul id="commentList"></ul>
+
+    <script src="xss-defense.js"></script>
+</body>
+</html>
